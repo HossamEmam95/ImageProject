@@ -37,7 +37,7 @@ you just need to register your product by product's barcode and its expiration d
 
 **Team Number:** *51*
 
-**Our Member:**
+**Team Members:**
 
 *1. Ahmed Bahgat*
 
