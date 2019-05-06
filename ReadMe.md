@@ -2,13 +2,7 @@ IM Project
 
 reqs: 
 
-pip install opencv-python
-
-pip install flask
-
-pip install numpy
-
-pip install pyzbar
+pip install -r requiements.txt
 
 then:
 
