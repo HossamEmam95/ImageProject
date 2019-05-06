@@ -31,6 +31,8 @@ you just need to register your product by product's barcode and its expiration d
     sudo apt install libtesseract-dev
 
     pip install pytesseract
+    
+ **[Lets go to install our app](https://github.com/hossa95/ImageProject/tree/master/enzo)**
 
 
 **Team Name:** *Enzo*
