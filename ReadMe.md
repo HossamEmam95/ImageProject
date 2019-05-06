@@ -20,11 +20,17 @@ you just need to register your product by product's barcode and its expiration d
 
 **For Installation:**
 
-**1) For reqs:**
+**1) Download this our repo:**
+
+From Github:
+
+    git clone https://github.com/hossa95/ImageProject.git
+
+**2) For reqs:**
 
       pip install -r requirements.txt
 
-**2) Then:**
+**3) Then:**
 
     sudo apt install tesseract-ocr
 
@@ -32,7 +38,7 @@ you just need to register your product by product's barcode and its expiration d
 
     pip install pytesseract
     
- **[Lets go to install our app](https://github.com/hossa95/ImageProject/tree/master/enzo)**
+ **4)[Lets go to install our app](https://github.com/hossa95/ImageProject/tree/master/enzo)**
 
 
 **Team Name:** *Enzo*
