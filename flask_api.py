@@ -12,7 +12,7 @@ app.config['UPLOAD_FOLDER'] = folder
 # route http posts to this method
 @app.route('/', methods=['POST'])
 def test():
-    image = request.files['img']
+    image = request.files['image']
 
     image.save(os.path.join(app.config['UPLOAD_FOLDER'], "down.jpg"))
 
@@ -22,4 +22,5 @@ def test():
     return "hi"
 
 # start flask app
-app.run(debug=True)
+app.run(debug=True, host= '0.0.0.0')
+# to run this on local: FLASK_APP=flask_api.py flask run --host=0.0.0.0
