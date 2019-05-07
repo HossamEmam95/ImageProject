@@ -53,6 +53,6 @@ def ocr_api():
     return json.dumps(date)
 
 # start flask app
-app.run(debug=True)
+app.run(debug=True, host=0.0.0.0)
 
 # to run this on local: FLASK_APP=flask_api.py flask run --host=0.0.0.0
