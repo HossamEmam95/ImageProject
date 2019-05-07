@@ -3,6 +3,8 @@ import os
 from barcode_read import run
 from ocr import run_ocr
 import cv2
+import re
+import json
 
 # Initialize the Flask application
 app = Flask(__name__)
@@ -18,10 +20,10 @@ def barcode():
 
     img = cv2.imread('down.jpg')
     decoded_obj = run(img)
-    if len(decoded_obj) > 0:
-        return decoded_obj[0].data
-    else:
-        return "Sorry can find the barcode can you retake a more clear image"
+    try:
+        return json.dumps(int(decoded_obj[0].data))
+    except:
+        return json.dumps("Sorry can't find the barcode can you retake a more clear image")
 
 
 # ocr api
@@ -33,10 +35,22 @@ def ocr_api():
 
     img = cv2.imread('down.jpg')
     text = run_ocr(img)
-    pos = text.find('EXP')
-    date = text[pos-2: pos] + text[pos+1: pos+3]
+    # pos = text.find('EXP')
+    # target = text[pos: pos+10]
+    # pos = target.find("/")
+    # date = target[pos-2: pos] + target[pos+1: pos+3]
     print(text)
-    return date
+    date = ""
+    try:
+        date = re.search(r'[0-9]+/[0-9]+', text).group()
+        text2 = text[text.find(date) + 3:]
+        try:
+            date = re.search(r'[0-9]+/[0-9]+', text2).group()
+        except:
+            pass
+    except:
+        return json.dumps("sorry can't read date please retake image")
+    return json.dumps(date)
 
 # start flask app
 app.run(debug=True)
