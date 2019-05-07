@@ -20,6 +20,17 @@ With use image processing, we detect the barcode and the expiration date, save t
 
 you just need to register your product by product's barcode and its expiration date by taking pictures of both and the app will remind you with the expiration date and tell if you have another pieces with earlier expiration date.
 
+## - Use Cases:
+
+This application is very important in Medical Field to avoid any patient from taking expired medicine
+so 
+
+1- Pharmaceris: to know expiration date of each medicine to prevent sale expired medicine and to know quantity of medicine in all branches and stores
+
+2- Patient: to know if medicine is expired or not
+
+Anyone can use this app for any product to know can buy it or not
+
 ## - For Installation:
 
 ### 1) Download this our repo:
