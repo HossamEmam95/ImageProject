@@ -43,12 +43,11 @@ From Github:
  ### 4) [Lets go to install our app](https://github.com/hossa95/ImageProject/tree/master/enzo)
 
 
-## - Team Name: 
-*Enzo*
+**- Team Name:** *Enzo*
 
-## - Team Number: *51*
+**- Team Number:** *51*
 
-## - Team Members:
+**- Team Members:**
 
 *1. Ahmed Bahgat*
 
